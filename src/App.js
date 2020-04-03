@@ -2,7 +2,11 @@ import React from "react";
 import Table from "./components/table";
 
 function App() {
-  return <Table />;
+    return (
+        <div className='container'>
+              <Table />
+        </div>
+    )
 }
 
 export default App;
