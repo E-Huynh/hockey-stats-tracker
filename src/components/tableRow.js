@@ -1,16 +1,16 @@
 import React from "react";
 
-function TableRow() {
+function TableRow(props) {
     return (
         <tr>
-            <td>Sebastian Aho</td>
-            <td>CAR</td>
-            <td>L</td>
-            <td>C</td>
-            <td>68</td>
-            <td>38</td>
-            <td>28</td>
-            <td>66</td>
+            <td>{props.name}</td>
+            <td>{props.team}</td>
+            <td>{props.shoots}</td>
+            <td>{props.position}</td>
+            <td>{props.played}</td>
+            <td>{props.goals}</td>
+            <td>{props.assists}</td>
+            <td>{props.points}</td>
         </tr>
     )
 }

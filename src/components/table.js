@@ -17,7 +17,7 @@ function Table() {
                 </tr>
             </thead>
             <tbody>
-                <TableRow />
+                <TableRow name={'sebastian'} team={'CAR'} shoots={'L'} position={'C'} played={68} goals={38} assists={28} points={66}  />
             </tbody>
         </table>
     )
