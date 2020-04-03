@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Sebastian Aho",
+        "team": "CAR",
+        "shoots": "L",
+        "position": "C",
+        "played": 68,
+        "goals": 38,
+        "assists": 28,
+        "points": 66
+    },
+    {
+        "id": 2,
+        "name": "Andrei Svechnikov",
+        "team": "CAR",
+        "shoots": "L",
+        "position": "R",
+        "played": 68,
+        "goals": 24,
+        "assists": 37,
+        "points": 61
+    },
+    {
+        "id": 3,
+        "name": "Teuvo Teravainen",
+        "team": "CAR",
+        "shoots": "L",
+        "position": "L",
+        "played": 68,
+        "goals": 15,
+        "assists": 48,
+        "points": 63
+    },
+    {
+        "id": 4,
+        "name": "Dougie Hamilton",
+        "team": "CAR",
+        "shoots": "R",
+        "position": "D",
+        "played": 47,
+        "goals": 14,
+        "assists": 26,
+        "points": 40
+    },
+    {
+        "id": 5,
+        "name": "Jacob Slavin",
+        "team": "CAR",
+        "shoots": "L",
+        "position": "D",
+        "played": 68,
+        "goals": 6,
+        "assists": 30,
+        "points": 36
+    },
+    {
+        "id": 6,
+        "name": "Petr Mrazek",
+        "team": "CAR",
+        "shoots": "L",
+        "position": "G",
+        "played": 40,
+        "goals": 0,
+        "assists": 0,
+        "points": 0
+    }
+]

@@ -1,5 +1,6 @@
 import React from "react";
 import TableRow from "./tableRow"
+import Stats from "./stats.json"
 
 function Table() {
     return (
@@ -17,7 +18,9 @@ function Table() {
                 </tr>
             </thead>
             <tbody>
-                <TableRow name={'sebastian'} team={'CAR'} shoots={'L'} position={'C'} played={68} goals={38} assists={28} points={66}  />
+                {Stats.map((obj) =>
+                    <TableRow key={obj.id} {...obj} />
+                )}
             </tbody>
         </table>
     )
