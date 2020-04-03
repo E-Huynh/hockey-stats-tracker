@@ -2,7 +2,7 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import Stats from './stats.json';
 
-export default function MaterialTableDemo() {
+export default function Table() {
   const [state, setState] = React.useState({
     columns: [
       { title: 'Player', field: 'player' },
@@ -15,7 +15,6 @@ export default function MaterialTableDemo() {
       { title: 'Points', field: 'points', type: 'numeric' },
     ],
     data: Stats
-
   });
 
   return (
