@@ -22,6 +22,7 @@ export default function Table() {
       title="Player Stats"
       columns={state.columns}
       data={state.data}
+      options={{paging: false}}
       // editable={{
       //   onRowAdd: (newData) =>
       //     new Promise((resolve) => {
