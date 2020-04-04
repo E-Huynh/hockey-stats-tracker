@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "./components/table";
+// import Table from "./components/table";
 import Teams from "./components/teams";
 
 function App() {

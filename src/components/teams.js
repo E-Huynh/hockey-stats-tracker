@@ -1,18 +1,6 @@
 import React from 'react';
-// function Teams() {
-//     return (
-//         <div className='center-align mainDisplay'>
-//             <h1>Choose a Team</h1>
-//             <button class="waves-effect waves-light btn randomBtn" onClick={displayRandom}>Random</button>
-//         </div>
-//     );
-// }
 
-// function displayRandom() {
-//     alert();
-// }
-
-// data
+// Variables
 const teamArr = ["Boston Bruins", "Buffalo Sabres", "Detroit Red Wings", "Florida Panthers", "Montreal Canadiens", "Ottawa Senators", "Tampa Bay Lightning", "Toronto Maple Leafs", "Carolina Hurricanes", "Columbus Blue Jackets", "New Jersey Devils", "New York Islanders", "New York Rangers", "Philadelphia Flyers", "Pittsburgh Penguins", "Washington Capitals", "Chicago Blackhawks", "Colorado Avalanche", "Dallas Stars", "Minnesota Wild", "Nashville Predators", "St. Louis Blues", "Winnipeg Jets", "Anaheim Ducks", "Arizona Coyotes", "Calgary Flames", "Edmonton Oilers", "Los Angeles Kings", "San Jose Sharks", "Vancouver Canucks", "Vegas Golden Knights"]
 
 
