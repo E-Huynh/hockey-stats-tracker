@@ -1,11 +1,12 @@
 import React from "react";
 import Table from "./components/table";
+import Teams from "./components/teams";
 
 function App() {
     return (
         <div className='container'>
             <h1 className="center-align">Hockey Stats Tracker</h1>
-              <Table />
+              <Teams />
         </div>
     )
 }
