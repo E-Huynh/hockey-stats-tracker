@@ -134,5 +134,73 @@
             "assists": 0,
             "points": 0
         }
+    ],
+    "MinnesotaWild": [
+        {
+            "id": 1,
+            "player": "Sebastian Aho",
+            "team": "MIN",
+            "sc": "L",
+            "position": "C",
+            "played": 68,
+            "goals": 38,
+            "assists": 28,
+            "points": 66
+        },
+        {
+            "id": 2,
+            "player": "Andrei Svechnikov",
+            "team": "MIN",
+            "sc": "L",
+            "position": "R",
+            "played": 68,
+            "goals": 24,
+            "assists": 37,
+            "points": 61
+        },
+        {
+            "id": 3,
+            "player": "Teuvo Teravainen",
+            "team": "MIN",
+            "sc": "L",
+            "position": "L",
+            "played": 68,
+            "goals": 15,
+            "assists": 48,
+            "points": 63
+        },
+        {
+            "id": 4,
+            "player": "Dougie Hamilton",
+            "team": "MIN",
+            "sc": "R",
+            "position": "D",
+            "played": 47,
+            "goals": 14,
+            "assists": 26,
+            "points": 40
+        },
+        {
+            "id": 5,
+            "player": "Jacob Slavin",
+            "team": "MIN",
+            "sc": "L",
+            "position": "D",
+            "played": 68,
+            "goals": 6,
+            "assists": 30,
+            "points": 36
+        },
+        {
+            "id": 6,
+            "player": "Petr Mrazek",
+            "team": "MIN",
+            "sc": "L",
+            "position": "G",
+            "played": 40,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+        }
     ]
 }
