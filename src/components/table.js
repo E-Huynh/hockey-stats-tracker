@@ -3,7 +3,7 @@ import MaterialTable from 'material-table';
 import Stats from './stats.json';
 
 export default function Table() {
-  const [state, setState] = React.useState({
+  const [state] = React.useState({
     columns: [
       { title: 'Player', field: 'player' },
       { title: 'Team', field: 'team' },
