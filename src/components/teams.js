@@ -6,8 +6,6 @@ import allTeams from './allTeams.json';
 import Stats from './stats.json';
 
 // Variables
-const teamArr = allTeams
-
 
 class Teams extends React.Component {
     // states
@@ -18,8 +16,8 @@ class Teams extends React.Component {
     // methods
     displayRandomTeam = event => {
         event.preventDefault()
-        const rand = Math.floor(Math.random() * teamArr.length)
-        this.setState({team: teamArr[rand]})
+        const rand = Math.floor(Math.random() * allTeams.length)
+        this.setState({team: allTeams[rand]})
     };
 
     // render
@@ -27,8 +25,8 @@ class Teams extends React.Component {
         const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
-                <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
+                <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <StatsTable stats={teamObj}/>
             </div>
         );
