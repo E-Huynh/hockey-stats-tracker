@@ -15,7 +15,6 @@ export default function Table(props) {
     ],
   });
 
-  console.log('props.stats: ', props.stats)
   return (
     <MaterialTable
       title="Player Stats"

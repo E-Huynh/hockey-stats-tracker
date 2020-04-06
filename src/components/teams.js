@@ -7,7 +7,7 @@ import Stats from './stats.json';
 
 // Variables
 const teamArr = allTeams
-const stats = Stats
+
 
 class Teams extends React.Component {
     // states
@@ -24,10 +24,7 @@ class Teams extends React.Component {
 
     // render
     render() {
-        const str = this.state.team.replace(/\s/g, '')
-        console.log('str', str)
-        const data = Stats[str]
-        console.log('data' ,data)
+        const data = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
