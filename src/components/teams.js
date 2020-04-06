@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from './table';
+import StatsTable from './statsTable';
 import TeamName from './teamName';
 import RandomBtn from './randomBtn';
 import allTeams from './allTeams.json';
@@ -24,12 +24,12 @@ class Teams extends React.Component {
 
     // render
     render() {
-        const data = Stats[this.state.team.replace(/\s/g, '')]
+        const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
-                <Table stats={data}/>
+                <StatsTable stats={teamObj}/>
             </div>
         );
     }
