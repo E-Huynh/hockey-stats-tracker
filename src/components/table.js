@@ -1,8 +1,7 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import Stats from './stats.json';
 
-export default function Table() {
+export default function Table(props) {
   const [state] = React.useState({
     columns: [
       { title: 'Player', field: 'player' },
@@ -14,7 +13,7 @@ export default function Table() {
       { title: 'Assists', field: 'assists', type: 'numeric' },
       { title: 'Points', field: 'points', type: 'numeric' },
     ],
-    data: Stats
+    data: props.stats
   });
 
   return (
