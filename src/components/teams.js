@@ -8,11 +8,30 @@ import Select from './select';
 
 // Variables
 
+
+
 class Teams extends React.Component {
     // states
     state = {
         team: "Carolina Hurricanes",
-        position: "A"
+        position: "A",
+        stats: ({Stats})
+    }
+
+    filterStats = () => {
+        console.log('filterStats fx: ', this.state.stats);
+    }
+
+    filterByTeam = () => {
+        const team = Stats[this.state.team.replace(/\s/g, '')];
+        return this.filterByPosition(team)
+    }
+    
+    filterByPosition = filteredTeam => {
+        const filteredPlayers = filteredTeam.filter((player, index) => {
+            return this.state.position === player.position
+        })
+        return filteredPlayers.length !== 0 ? filteredPlayers : filteredTeam
     }
 
     // methods
@@ -22,12 +41,19 @@ class Teams extends React.Component {
         this.setState({team: allTeams[rand]})
     };
 
+    resetStats = event => {
+        this.setState({
+            team: "Carolina Hurricanes",
+            position: "A",
+            stats: {Stats}
+        })
+    }
+
     handleTeamSelect = event => {
         this.setState({team: event.target.value})
     }
 
     handlePositionSelect = event => {
-        console.log('pos: ', event.target.value)
         switch (event.target.value) {
             case 'Left Wing':
                 this.setState({position: 'L'})
@@ -52,7 +78,8 @@ class Teams extends React.Component {
 
     // render
     render() {
-        const teamObj = Stats[this.state.team.replace(/\s/g, '')]
+        const teamObj = this.filterByTeam()
+        // const teamObj = this.state.stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
                 <Select label={'Team'} array={allTeams} onChange={this.handleTeamSelect}/>
