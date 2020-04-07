@@ -1,13 +1,14 @@
 import React from 'react';
-import Li from './li'
+import Option from './option'
 
 function Dropdown(props) {
+    console.log(props)
     return (
         <div className="input-field col s12">
-            <select>
+            <select onChange={props.onChange}>
                 <option disabled>Choose a Team</option>
-                {props.teamArr.map((obj) =>
-                    <Li team={obj} clickEvent={props.clickEvent} />
+                {props.teamArr.map((index) =>
+                    <Option team={index} />
                 )}
             </select>
             <label>Team Select</label>
