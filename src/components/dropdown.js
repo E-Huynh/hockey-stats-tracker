@@ -1,16 +1,14 @@
 import React from 'react';
+import Li from './li'
 
-function Dropdown() {
+function Dropdown(props) {
     return (
         <div>
-            <button className="dropdown-trigger btn" href="#" data-target="dropdown1">Drop Me!</button>
-            <ul id="dropdown1" className="dropdown-content">
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li className="divider" tabIndex={-1} />
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i className="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i className="material-icons">cloud</i>five</a></li>
+            <button className="dropdown-trigger btn" href="#" data-target="teamDroplist">Team</button>
+            <ul id="teamDroplist" className="dropdown-content">
+                {props.teamArr.map((obj) =>
+                    <Li team={obj} />
+                )}
             </ul>
         </div>
 

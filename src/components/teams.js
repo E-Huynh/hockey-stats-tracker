@@ -27,7 +27,7 @@ class Teams extends React.Component {
         const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
-                <Dropdown />
+                <Dropdown teamArr={allTeams}/>
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <StatsTable stats={teamObj}/>
