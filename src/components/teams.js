@@ -22,7 +22,7 @@ class Teams extends React.Component {
         this.setState({team: allTeams[rand]})
     };
 
-    handleChange = event => {
+    handleTeamSelect = event => {
         event.preventDefault();
         this.setState({team: event.target.value})
     }
@@ -32,7 +32,7 @@ class Teams extends React.Component {
         const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
-                <Select teamArr={allTeams} onChange={this.handleChange}/>
+                <Select teamArr={allTeams} onChange={this.handleTeamSelect}/>
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <StatsTable stats={teamObj}/>
