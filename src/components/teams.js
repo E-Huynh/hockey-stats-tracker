@@ -12,7 +12,7 @@ class Teams extends React.Component {
     // states
     state = {
         team: "Carolina Hurricanes",
-        division: ""
+        position: "A"
     }
 
     // methods
@@ -23,8 +23,31 @@ class Teams extends React.Component {
     };
 
     handleTeamSelect = event => {
-        event.preventDefault();
         this.setState({team: event.target.value})
+    }
+
+    handlePositionSelect = event => {
+        console.log('pos: ', event.target.value)
+        switch (event.target.value) {
+            case 'Left Wing':
+                this.setState({position: 'L'})
+                break;
+            case 'Right Wing':
+                this.setState({position: 'R'})
+                break;
+            case 'Center':
+                this.setState({position: 'C'})
+                break;
+            case 'Defensemen':
+                this.setState({position: 'D'})
+                break;
+            case 'Goalie':
+                this.setState({position: 'G'})
+                break;
+            default:
+                this.setState({position: 'A'})
+                break;
+        }
     }
 
     // render
@@ -32,7 +55,8 @@ class Teams extends React.Component {
         const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
-                <Select teamArr={allTeams} onChange={this.handleTeamSelect}/>
+                <Select label={'Team'} array={allTeams} onChange={this.handleTeamSelect}/>
+                <Select label={'Position'} array={['All Positions', 'Left Wing', 'Right Wing', 'Center', 'Defensemen', 'Goalie']} onChange={this.handlePositionSelect}/>
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <StatsTable stats={teamObj}/>

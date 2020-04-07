@@ -6,12 +6,12 @@ function Select(props) {
     return (
         <div className="input-field col s12">
             <select onChange={props.onChange}>
-                <option disabled>Choose a Team</option>
-                {props.teamArr.map((index) =>
-                    <Option team={index} />
+                <option disabled>Select a {props.label}</option>
+                {props.array.map((index) =>
+                    <Option arrayValue={index} />
                 )}
             </select>
-            <label>Team Select</label>
+            <label>Select a {props.label}</label>
         </div>
 
 
