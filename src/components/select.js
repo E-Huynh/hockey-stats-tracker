@@ -1,7 +1,7 @@
 import React from 'react';
 import Option from './option'
 
-function Dropdown(props) {
+function Select(props) {
     console.log(props)
     return (
         <div className="input-field col s12">
@@ -18,4 +18,4 @@ function Dropdown(props) {
     )
 }
 
-export default Dropdown;
+export default Select;

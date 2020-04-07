@@ -4,7 +4,7 @@ import TeamName from './teamName';
 import RandomBtn from './randomBtn';
 import allTeams from './allTeams.json';
 import Stats from './stats.json';
-import Dropdown from './dropdown';
+import Select from './select';
 
 // Variables
 
@@ -24,7 +24,6 @@ class Teams extends React.Component {
 
     handleChange = event => {
         event.preventDefault();
-        console.log("event", event);
         this.setState({team: event.target.value})
     }
 
@@ -33,7 +32,7 @@ class Teams extends React.Component {
         const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
-                <Dropdown teamArr={allTeams} onChange={this.handleChange}/>
+                <Select teamArr={allTeams} onChange={this.handleChange}/>
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <StatsTable stats={teamObj}/>
