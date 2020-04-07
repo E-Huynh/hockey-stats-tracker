@@ -4,13 +4,15 @@ import TeamName from './teamName';
 import RandomBtn from './randomBtn';
 import allTeams from './allTeams.json';
 import Stats from './stats.json';
+import Dropdown from './dropdown';
 
 // Variables
 
 class Teams extends React.Component {
     // states
     state = {
-        team: ""
+        team: "Carolina Hurricanes",
+        division: ""
     }
 
     // methods
@@ -25,6 +27,7 @@ class Teams extends React.Component {
         const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
+                <Dropdown />
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <StatsTable stats={teamObj}/>
