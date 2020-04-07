@@ -22,12 +22,18 @@ class Teams extends React.Component {
         this.setState({team: allTeams[rand]})
     };
 
+    clickEvent = event => {
+        event.preventDefault();
+        console.log("event", event);
+        // this.setState({team: })
+    }
+
     // render
     render() {
         const teamObj = Stats[this.state.team.replace(/\s/g, '')]
         return (
             <div className='center-align mainDisplay'>
-                <Dropdown teamArr={allTeams}/>
+                <Dropdown teamArr={allTeams} onChange={this.clickEvent}/>
                 <RandomBtn displayRandomTeam={this.displayRandomTeam}/>
                 <TeamName team={this.state.team !== "" ? this.state.team : "Generate Random Team"}/>
                 <StatsTable stats={teamObj}/>

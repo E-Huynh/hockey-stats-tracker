@@ -1,9 +1,7 @@
 import React from 'react'
 
-export default function li(props) {
+export default function option(props) {
     return (
-        <li>
-            <a href="#!">{props.team}</a>
-        </li>
+        <option value={props.team}>{props.team}</option>
     )
 }

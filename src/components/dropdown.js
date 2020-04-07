@@ -3,14 +3,16 @@ import Li from './li'
 
 function Dropdown(props) {
     return (
-        <div>
-            <button className="dropdown-trigger btn" href="#" data-target="teamDroplist">Team</button>
-            <ul id="teamDroplist" className="dropdown-content">
+        <div className="input-field col s12">
+            <select>
+                <option disabled>Choose a Team</option>
                 {props.teamArr.map((obj) =>
-                    <Li team={obj} />
+                    <Li team={obj} clickEvent={props.clickEvent} />
                 )}
-            </ul>
+            </select>
+            <label>Team Select</label>
         </div>
+
 
     )
 }
