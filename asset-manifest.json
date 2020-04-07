@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/hockey-stats-tracker/static/js/main.d2e90bef.chunk.js",
+    "main.js.map": "/hockey-stats-tracker/static/js/main.d2e90bef.chunk.js.map",
+    "runtime-main.js": "/hockey-stats-tracker/static/js/runtime-main.14804fc7.js",
+    "runtime-main.js.map": "/hockey-stats-tracker/static/js/runtime-main.14804fc7.js.map",
+    "static/js/2.602968d8.chunk.js": "/hockey-stats-tracker/static/js/2.602968d8.chunk.js",
+    "static/js/2.602968d8.chunk.js.map": "/hockey-stats-tracker/static/js/2.602968d8.chunk.js.map",
+    "index.html": "/hockey-stats-tracker/index.html",
+    "precache-manifest.b61030690281365df49de0da568f2f8e.js": "/hockey-stats-tracker/precache-manifest.b61030690281365df49de0da568f2f8e.js",
+    "service-worker.js": "/hockey-stats-tracker/service-worker.js",
+    "static/js/2.602968d8.chunk.js.LICENSE.txt": "/hockey-stats-tracker/static/js/2.602968d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.14804fc7.js",
+    "static/js/2.602968d8.chunk.js",
+    "static/js/main.d2e90bef.chunk.js"
+  ]
+}
